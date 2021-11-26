@@ -1,0 +1,15 @@
+@mixin arrow {
+	content: "";
+	border: 0;
+	border-left: 2px solid;
+	border-bottom: 2px solid;
+	width:8px;
+	height: 8px;
+	transform:translateY(-50%) rotate(-45deg);
+	position: absolute;
+	top:50%;
+	
+}
+@mixin arrow_opened {
+	transform:rotate(-45deg) scale(-1,-1);
+}

@@ -1,0 +1,86 @@
+$gray_1: #F0F2F5;
+$gray_2: #C4CCD8;
+$gray_3: #95A3B8;
+$gray_4: #667A99;
+$gray_5: #47556A;
+$gray_6: #272F3B;
+$soft-success:lighten(saturate(adjust-hue(theme-color("success"), -1), 61.35), 44.31);
+$soft-danger:lighten(theme-color("danger"), 24.31);
+$soft-primary:lighten(saturate(adjust-hue(theme-color("primary"), 1), 17.35), 38.04);
+$soft-warning:lighten(theme-color("warning"), 31.57);
+$soft-gray_4:lighten($gray_4, 45.10);
+.gray_1{
+	color: $gray_1;
+}
+.gray_2{
+	color: $gray_2;
+}
+.gray_3{
+	color: $gray_3;
+}
+.gray_4{
+	color: $gray_4;
+}
+.gray_5{
+	color: $gray_5;
+}
+.gray_6{
+	color: $gray_6;
+}
+.bg-gray_1{
+	background: $gray_1;
+}
+// color var
+
+.soft-success-text{
+	color: $soft-success !important;
+}
+.soft-success-border{
+	border-color: $soft-success !important;
+}
+.soft-success-bg{
+	background: $soft-success !important;
+}
+
+
+.soft-danger-text{
+	color: $soft-danger !important;
+}
+.soft-danger-border{
+	border-color: $soft-danger !important;
+}
+.soft-danger-bg{
+	background: $soft-danger !important;
+}
+
+
+.soft-primary-text{
+	color: $soft-primary !important;
+}
+.soft-primary-border{
+	border-color: $soft-primary !important;
+}
+.soft-primary-bg{
+	background: $soft-primary !important;
+}
+
+
+
+
+.soft-warning-text{
+	color: $soft-warning !important;
+}
+.soft-warning-border{
+	border-color: $soft-warning !important;
+}
+.soft-warning-bg{
+	background: $soft-warning !important;
+}
+
+
+.soft-gray_4-text{
+	color: $soft-gray_4 !important;
+}
+.soft-gray_4-border{
+	border-color: $soft-gray_4 !important;
+}

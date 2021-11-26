@@ -1,0 +1,49 @@
+@import
+'_custom_bootstrap_vatiables.scss',
+'../../bower_components/bootstrap/scss/_functions.scss',
+'../../bower_components/bootstrap/scss/_variables.scss',
+'../../bower_components/bootstrap/scss/_mixins.scss',
+'_mixin',
+'_param',
+
+'partials/ui/_colors',
+'partials/ui/_typography',
+'partials/ui/_font_size',
+'partials/ui/_btn',
+
+'partials/ui/forms/_input',
+'partials/ui/forms/_dropdown',
+'partials/ui/forms/_label',
+'partials/ui/forms/_switcher',
+'partials/ui/forms/_input_file',
+
+'partials/_sidebar';
+.soc_list{
+	li{
+		position: relative;
+		&:before{
+			content: "";
+			width: 1px;
+			height: 14px;
+			background: $gray_3; 
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform:translateY(-50%);
+			@include media-breakpoint-down(sm) {
+				content: none;
+			}
+		}
+		&:first-child{
+			&:before{
+				content: none;
+			}
+		}
+		a{
+			transition: all 0.3s ease;
+			&:hover{
+				opacity:.7;
+			}
+		}
+	}
+}

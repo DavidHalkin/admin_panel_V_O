@@ -1,0 +1,35 @@
+
+.form-control{
+	padding-left: 16px;
+	padding-right: 16px;
+	height: 48px;
+	@include media-breakpoint-down(md) {
+		height: 36px;
+	}
+	&.form-control-lg{
+		height: 56px;
+		font-size: 16px;
+		@include media-breakpoint-down(md) {
+			height: 44px;
+		}
+	}
+	&:not(:placeholder-shown){
+		border-color: $gray_5;
+	}
+	&:disabled{
+		border-color: #F0F2F5;
+		opacity: 0.5;
+		color: $gray_5;
+	}
+	&.is-invalid{
+		color: theme-color("danger");
+		border-color: theme-color("danger");
+		&:focus{
+			box-shadow: none;
+		}
+		&::placeholder{
+			color: theme-color("danger");
+		}
+	}
+	
+}

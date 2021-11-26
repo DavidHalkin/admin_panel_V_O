@@ -1,0 +1,38 @@
+$theme-colors: (
+   "success": #6EB251,
+   "secondary": #272F3B,
+   "primary": #37AEEC,
+   "warning": #FFBC45,
+   "danger": #FF6A6A,
+);
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1450px
+);
+$input-border-color: #C4CCD8;
+$input-focus-box-shadow: none;
+$input-disabled-bg:#F0F2F5;
+$input-placeholder-color:#47556A;
+$input-focus-border-color:#37AEEC;
+$input-border-radius: 4px;
+$input-color: #272F3B;
+$form-feedback-icon-invalid: none;
+$form-feedback-invalid-color:#FF6A6A;
+
+$btn-box-shadow: none;
+$btn-focus-box-shadow: none !important;
+
+$body-color: #272F3B;
+$btn-border-radius: 4px;
+
+
+$link-color:#37AEEC;
+$link-hover-color: #272F3B;
+
+$rounded-pill: 5px;
+
+
+// $font-size-base: 1.4rem;
