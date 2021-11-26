@@ -1,0 +1,38 @@
+.accordion {
+	> .card{
+		border-bottom: 1px solid rgba(0,0,0,0.125) !important;
+		+ .card{
+			margin-top: -1px;
+		}
+	}
+	.card{
+		border-radius: 0;
+		border-left: 0;
+		border-right: 0;
+
+		.btn {
+			padding: 16px 30px 16px 16px;
+			min-height: 94px;
+			display: flex;
+			align-items:center;
+			position: relative;
+			z-index: 1;
+			@include media-breakpoint-down(md) {
+				min-height: 72px;
+			}
+			&:after{
+				@include arrow;
+				right: 16px;
+			}
+			&[aria-expanded="true"]{
+				&:after{
+					@include arrow_opened;
+				}
+			}
+		}
+		.card-body{
+			background: $gray_1;
+			padding: 16px;
+		}
+	}
+}

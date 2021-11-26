@@ -17,6 +17,7 @@
 'partials/ui/forms/_switcher',
 'partials/ui/forms/_input_file',
 
+'partials/_accordion',
 'partials/_sidebar';
 .soc_list{
 	li{
@@ -50,4 +51,13 @@
 .form_centered{
 	max-width: 960px;
 	width: 100%;
+}
+.sticky_part{
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.title_block{
+	box-shadow: 2px 2px 4px 0px rgba(#000,.2);
 }

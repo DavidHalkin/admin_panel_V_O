@@ -1,0 +1,124 @@
+.sidebar{
+	max-width: 290px;
+	flex:0 0 290px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	height: 100vh;
+	background: #000;
+	z-index: 10;
+	overflow: auto;
+	transition: left 0.3s ease;
+	@include media-breakpoint-down(md) {
+		left: -290px;
+		&.opened{
+			left: 0;
+		}
+	}
+}
+body{
+	&.opened{
+		@include media-breakpoint-down(md) {
+			overflow: hidden;
+			&:after{
+				content: "";
+				width: 100%;
+				// height: calc(100vh - 67px);
+				height: 100%;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background: rgba(0,0,0,0.3);
+				z-index: 2;
+			}
+		}
+	}
+}
+.content_holder{
+	padding-left: 290px;
+	flex-grow: 1;
+	flex-basis: 0;
+	max-width: 100%;
+	@include media-breakpoint-down(md) {
+		padding-left: 0;
+	}
+}
+.sidebar{
+	.badge{
+		width: 100%;
+		height: 25px;
+		max-width: 25px;
+		flex: 0 0 25px;
+		display: flex;
+		text-align: center;
+		justify-content:center;
+		align-items:center;
+		font-style: normal;
+		font-size: 12px;
+		font-weight: normal;
+	}
+	ul{
+		li{
+			margin-bottom: 2px;
+			&:last-of-type{
+				margin-bottom: 0;
+			}
+			a{
+				color: #fff;
+				font-size: 13px;
+				line-height: 15px;
+				font-weight: bold;
+				display: flex;
+				align-items:center;
+				padding: 8px;
+				&:hover{
+					background:rgba(#fff,.16);
+					border-radius: 5px;
+				}
+				.txt_link{
+					flex-grow: 1;
+					flex-basis: 0;
+					max-width: 100%;
+					padding-right: 5px;
+				}
+				i{
+					font-size: 20px;
+					max-width: 25px;
+					flex:0 0 25px;
+					margin-right: 5px;
+				}
+				.img_profile{
+					font-size: 11px;
+					line-height: 14px;
+					color: #fff;
+					max-width: 25px;
+					width: 100%;
+					flex:0 0 25px;
+					height: 25px;
+					// background: red;
+					display: flex;
+					align-items:center;
+					font-weight: normal;
+					border-radius: 50%;
+					margin-right: 5px;
+					text-align: center;
+					justify-content:center;
+					overflow: hidden;
+				}
+			}
+			&.active{
+				a{
+					color: theme-color("danger");
+					background:rgba(#fff,.16);
+					border-radius: 5px;
+				}
+			}
+		}
+	}
+}
+.nav_sidebar_etc{
+	background:rgba(#fff,.16);
+}
