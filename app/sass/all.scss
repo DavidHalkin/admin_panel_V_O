@@ -61,3 +61,20 @@
 .title_block{
 	box-shadow: 2px 2px 4px 0px rgba(#000,.2);
 }
+.user_img{
+	max-width: 150px;
+	margin: 0 auto;
+	position: relative;
+	.user_img_edit{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 30px;
+		height: 30px;
+		display: flex;
+		align-items:center;
+		i{
+			font-size: 14px;
+		}
+	}
+}
