@@ -16,6 +16,7 @@
 'partials/ui/forms/_label',
 'partials/ui/forms/_switcher',
 'partials/ui/forms/_input_file',
+'partials/ui/forms/_checkbox_group',
 
 'partials/_accordion',
 'partials/_sidebar';
@@ -75,6 +76,51 @@
 		align-items:center;
 		i{
 			font-size: 14px;
+		}
+	}
+}
+.category_img{
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+}
+.table{
+	th{
+		font-weight: normal;
+	}
+	span,p,.comment{
+		font-size: 14px;
+	}
+	.col_more_text{
+		width: 90%;
+	}
+	.morelink{
+		display: inline-block;
+		color: theme-color("danger");
+	}
+	.user_name{
+		max-width: 180px;
+		.user_prev{
+			max-width: 30px;
+			flex:0 0 30px;
+		}
+		.user_txt{
+			max-width: 100%;
+		}
+	}
+}
+.morecontent span{display: none;}
+.toggle_filter{
+	position: relative;
+
+	&:after{
+		@include arrow;
+		right: 0;
+		margin-top: -2px;
+	}
+	&[aria-expanded="true"]{
+		&:after{
+			@include arrow_opened;
 		}
 	}
 }

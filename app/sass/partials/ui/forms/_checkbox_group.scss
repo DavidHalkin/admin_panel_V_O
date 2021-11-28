@@ -1,0 +1,41 @@
+.checkbox_group{
+	.custom-control{
+		// border-radius: 5px;
+		border: 1px solid theme-color("success");
+		&:first-of-type{
+			border-radius:5px  0  0 5px;
+		}
+		&:last-of-type{
+			border-radius: 0 5px 5px 0;
+		}
+		+ .custom-control{
+			margin-left: -1px;
+		}
+	}
+	input[type="checkbox"]{
+		display: none;
+	}
+	input{
+		&:checked{
+			~ .custom-control-label{
+				background: theme-color("success");
+				color: #fff !important;
+			}
+		}
+	}
+	.custom-checkbox{
+		padding: 0;
+	}
+	.custom-control-label{
+		@include media-breakpoint-down(lg) {
+			font-size: 11px;
+		}
+		padding: 0;
+		user-select: none;
+		cursor: pointer;
+		
+		&:after,&:before{
+			content: none;
+		}
+	}
+}

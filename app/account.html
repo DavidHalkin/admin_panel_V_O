@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		 
+		<link rel="stylesheet" href="css/custom_bootstrap.css">
+		<link rel="stylesheet" href="css/all.css">
+		<link rel="stylesheet" href="css/libs.min.css">
+		<title>#</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="main_holder d-flex flex-wrap">
+				<div class="sidebar d-flex flex-column justify-content-between menu_panel_js">
+					<div class="nav_sidebar p-2">
+						<strong class="d-block text-center py-3"><a href="#" class="text-danger"> LOGO</a></strong>
+						<ul class="list-unstyled">
+							<li>
+								<a href="#">
+									<i class="fas fa-plus-circle fa-fw"></i>
+									<span class="txt_link">Проекты</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fas fa-pencil-alt  fa-fw"></i>
+									<span class="txt_link">Задачи и фильтры</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="far fa-calendar-alt fa-fw"></i>
+									<span class="txt_link">Массив данных</span>
+									<em class="badge badge-danger text-white rounded-circle">99+</em>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="far fa-chart-bar fa-fw"></i>
+									<span class="txt_link">Инструкция</span>
+								</a>
+							</li>
+							<li class="active">
+								<a href="#">
+									<i class="fas fa-wrench fa-fw fa-flip-horizontal"></i>
+									<span class="txt_link">Тех.поддержка</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="nav_sidebar_etc p-2">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="#">
+									<!-- <b class="img_profile" style="background: green;">ЛМ</b> if only txt -->
+									<b class="img_profile"><img src="https://picsum.photos/200" alt="" class="img-fluid"></b>
+									<span class="txt_link text-truncate">Профиль_Профиль_Профиль_Профиль_Профиль_Профиль_Профиль_</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="far fa-credit-card  fa-fw"></i>
+									<span class="txt_link">Оплатить</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fas fa-hand-holding-usd fa-fw"></i>
+									<span class="txt_link">Пригласить друга</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fas fa-walking fa-fw"></i>
+									<span class="txt_link">Выйти</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="content_holder">
+					<div class="sticky_part">
+						<div class="title_block bg-white py-2 py-md-3 px-3 d-flex align-items-center flex-wrap">
+							<a href="#" class="btn_mob_menu fz_25 mr-4 d-block d-lg-none menu_mob_js"><i class="fas fa-bars"></i></a>
+							<h4 class="mb-0 pr-3 mr-auto">Account</h4>
+							<p class="mb-0">Ваш баланс: <a href="#" class="text-primary">100$</a> хватит на N дней</p>
+						</div>
+					</div>
+					<div class="content_part px-3 px-xl-4 pt-3 pt-md-5">
+						<div class="container_xl px-0">
+							<div class="filter_block p-2 p-sm-3 soft-warning-bg rounded mb-4">
+								<div class="row justify-content-between">
+									<div class="col-auto">
+										<a class="toggle_filter pr-4"  data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true" aria-controls="collapseExample">Filters</a>
+									</div>
+									<div class="col-auto">
+										<div class="d-flex align-items-center flex-wrap">
+											<div class="custom-control custom-checkbox pr-3">
+												<input type="checkbox" class="custom-control-input" id="c1">
+												<label class="custom-control-label font-weight-normal text-dark fz_16" for="c1">Строгая фильтрация</label>
+											</div>
+											<a href="#">Reset <span>(5)</span></a>
+										</div>
+									</div>
+								</div>
+								<div class="collapse show" id="collapseExample">
+									<div class="card card-body mt-3 p-2 p-sm-3">
+										<div class="row">
+											<div class="col-12 col-md-6 col-xl pb-4 pb-xl-0">
+												<p>Filter post:</p>
+												<div class="checkbox_group d-flex mb-5">
+													<div class="custom-control custom-checkbox">
+														<input type="checkbox" class="custom-control-input" id="f1">
+														<label class="custom-control-label font-weight-normal text-dark p-2" for="f1">от рекламы</label>
+													</div>
+													<div class="custom-control custom-checkbox">
+														<input type="checkbox" class="custom-control-input" id="f11">
+														<label class="custom-control-label font-weight-normal text-dark p-2" for="f11">от пользователя</label>
+													</div>
+													<div class="custom-control custom-checkbox">
+														<input type="checkbox" class="custom-control-input" id="f111" checked>
+														<label class="custom-control-label font-weight-normal text-dark p-2" for="f111">от паблика</label>
+													</div>
+												</div>
+												<p>Comments from:</p>
+												<div class="checkbox_group d-flex">
+													<div class="custom-control custom-checkbox">
+														<input type="checkbox" class="custom-control-input" id="n1">
+														<label class="custom-control-label font-weight-normal text-dark p-2" for="n1">комментарию</label>
+													</div>
+													<div class="custom-control custom-checkbox">
+														<input type="checkbox" class="custom-control-input" id="n2">
+														<label class="custom-control-label font-weight-normal text-dark p-2" for="n2">от паблика</label>
+													</div>
+													<div class="custom-control custom-checkbox">
+														<input type="checkbox" class="custom-control-input" id="n3" checked>
+														<label class="custom-control-label font-weight-normal text-dark p-2" for="n3">от пользователя</label>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-md-6 col-xl">
+												<div class="row">
+													<div class="col-12 col-xl-6 pb-4 pb-xl-0">
+														<div class="row mx-n1">
+															<div class="col-12 col-sm-6 col-md-6 col-xl-12 px-1">
+																<div class="form-group">
+																	<label for="el1" class="font-weight-normal text-dark mb-3">From date:</label>
+																	<input type="text" class=" form-control" id="el1" placeholder="Set Data Start">
+																</div>
+															</div>
+															<div class="col-12 col-sm-6 col-md-6 col-xl-12 px-1">
+																<div class="form-group">
+																	<label for="el2" class="font-weight-normal text-dark mb-3">To date:</label>
+																	<input type="text" class="datepicker-here form-control" id="el2" placeholder="Set Data End">
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-12 col-xl-6">
+														<div class="form-group">
+															<label for="n1" class="font-weight-normal text-primary mb-3">Ключ слова</label>
+															<input type="text" class=" form-control" id="n1" placeholder="Через запятую">
+														</div>
+														<div class="form-group">
+															<label for="n11" class="font-weight-normal text-danger mb-3">Минус слова</label>
+															<input type="text" class=" form-control" id="n11" placeholder="Через запятую">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row justify-content-center pt-5">
+											<div class="col-12 col-md-6 col-xl-4">
+												<a href="#" class="btn btn-outline-success btn-block">Search</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="table-responsive">
+								<table class="table">
+									<thead class="thead-dark">
+										<tr>
+											<th scope="col">Кат.</th>
+											<th scope="col">Дата/время</th>
+											<th scope="col">Пользователь</th>
+											<th scope="col">Объявление</th>
+											<th scope="col">Город</th>
+											<th scope="col">&nbsp;</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<span class="category_img">
+													<img src="https://picsum.photos/100" alt="" class="img-fluid rounded-circle">
+												</span>
+											</td>
+											<td>
+												<span class="d-block">today</span>
+												<span class="d-block">12:33</span>
+											</td>
+											<td>
+												<div class="user_name d-flex align-items-center">
+													<div class="user_prev">
+														<a href="#">
+															<img src="https://picsum.photos/100" alt="" class="img-fluid rounded-circle">
+														</a>
+													</div>
+													<div class="user_txt col text-truncate">
+														<span>LoremLoremLoremLoremLoremLoremLoremLoremLorem</span>
+													</div>
+												</div>
+											</td>
+											<td class="col_more_text">
+												<div class="comment more_js">
+													Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, quo architecto optio cum fugit illo perferendis odit ea impedit fuga eligendi velit quasi nam praesentium voluptas? Aspernatur, nulla libero sint.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, quo architecto optio cum fugit illo perferendis odit ea impedit fuga eligendi velit quasi nam praesentium voluptas? Aspernatur, nulla libero sint.
+												</div>
+											</td>
+											<td>
+												<span>н/д</span>
+											</td>
+											<td>
+												<a href="#" class="btn btn-danger p-2 fas fa-times text-white fz_13"></a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="category_img">
+													<img src="https://picsum.photos/100" alt="" class="img-fluid rounded-circle">
+												</span>
+											</td>
+											<td>
+												<span class="d-block">today</span>
+												<span class="d-block">12:33</span>
+											</td>
+											<td>
+												<div class="user_name d-flex align-items-center">
+													<div class="user_prev">
+														<a href="#">
+															<img src="https://picsum.photos/100" alt="" class="img-fluid rounded-circle">
+														</a>
+													</div>
+													<div class="user_txt col text-truncate">
+														<span>LoremLoremLoremLoremLoremLoremLoremLoremLorem</span>
+													</div>
+												</div>
+											</td>
+											<td class="col_more_text">
+												<div class="comment more_js">
+													Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat
+												</div>
+											</td>
+											<td>
+												<span>н/д</span>
+											</td>
+											<td>
+												<a href="#" class="btn btn-danger p-2 fas fa-times text-white fz_13"></a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/air-datepicker.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+			let dpMin, dpMax;
+
+			dpMin = new AirDatepicker('#el1', {
+				timepicker: true,
+			    minHours: 9,
+			    maxHours: 18,
+			    minutesStep: 5,
+			    onSelect({date}) {
+			        dpMax.update({
+			            minDate: date
+			        })
+			    }
+			})
+
+			dpMax = new AirDatepicker('#el2', {
+				timepicker: true,
+			    minHours: 9,
+			    maxHours: 18,
+			    minutesStep: 5,
+			    position:"bottom right",
+			    onSelect({date}) {
+			        dpMin.update({
+			            maxDate: date
+			        })
+			    }
+			})
+		</script>
+	</body>
+</html>
